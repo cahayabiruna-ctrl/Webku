@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DV Team x OPALP – Presentasi Interaktif 12 Slide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; margin:0; padding:0; background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); }
+    .slide { display: none; padding:20px; text-align:center; min-height:90vh; }
+    .active { display: block; }
+    .slide h1 { font-size:2.2rem; font-weight:bold; margin-top:20px; color:#0f172a; }
+    .slide p { font-size:1.1rem; margin-top:10px; color:#1e293b; }
+    .cta-button { margin-top:20px; padding:12px 28px; background:#06b6d4; color:white; font-weight:bold; border-radius:9999px; cursor:pointer; transition:0.3s; }
+    .cta-button:hover { transform:scale(1.05); background:#0891b2; }
+    .nav-buttons { display:flex; justify-content:space-between; max-width:600px; margin:20px auto; }
+    .nav-buttons button { padding:10px 22px; border:none; border-radius:8px; font-weight:bold; cursor:pointer; transition:0.3s; }
+    .nav-buttons button:hover { transform: scale(1.05); }
+    .lottie-slide { width:350px; height:350px; margin:auto; }
+    .animate-slide { animation: zoomBounce 1.2s ease-in-out; }
+    @keyframes zoomBounce {
+      0% { transform: scale(0.8); opacity:0; }
+      60% { transform: scale(1.05); opacity:1; }
+      100% { transform: scale(1); }
+    }
+    .fallback { width:350px; height:350px; margin:auto; display:none; }
+  </style>
+</head>
+<body>
+
+<div id="presentation">
+
+  <!-- Slide 1 -->
+  <div class="slide active">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Konsep Usaha Masa Depan</h1>
+    <p>Digital Verification Team & OPALP<br>Teknologi Digital & Ekonomi Berbagi</p>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets2.lottiefiles.com/packages/lf20_jtbfg2nb.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Masalah & Tantangan</h1>
+    <p>Setiap orang punya Kebutuhan, Keinginan & Impian.<br>Penghasilan tidak seimbang dengan biaya hidup, PHK & pengangguran tinggi.</p>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets7.lottiefiles.com/packages/lf20_t24tpvcu.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Sentralisasi Skill & Knowledge</h1>
+    <p>Hanya sebagian orang dapat menikmati kebebasan finansial, sedangkan berjuang sendiri sulit & iklim usaha tidak kondusif.</p>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets10.lottiefiles.com/packages/lf20_totrpclr.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Solusi Nyata</h1>
+    <p>Bergabung bersama TIM INVESTASI DV (DV-Team)</p>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Perkenalkan DV Team & Opalp</h1>
+    <p>DV Team: tim investasi global<br>OPALP: platform trading internasional berbasis AI & teknologi digital</p>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets7.lottiefiles.com/packages/lf20_t24tpvcu.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Legalitas & Keamanan</h1>
+    <p>OPALP telah teregulasi internasional. Investasi & trading berada di platform resmi & aman.</p>
+  </div>
+
+  <!-- Slide 7 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets10.lottiefiles.com/packages/lf20_totrpclr.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Peluang & Sistem</h1>
+    <p>AI + tim ahli memberikan sinyal trading terukur dan strategi investasi sistematis.</p>
+  </div>
+
+  <!-- Slide 8 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Keuntungan Bergabung</h1>
+    <p>Belajar langsung dari ahlinya, strategi terbukti, sistem modern, profit lebih terukur.</p>
+  </div>
+
+  <!-- Slide 9 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets7.lottiefiles.com/packages/lf20_t24tpvcu.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Testimoni</h1>
+    <p>Anggota DV Team telah merasakan pertumbuhan profit dan pemahaman trading modern secara nyata.</p>
+  </div>
+
+  <!-- Slide 10 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets10.lottiefiles.com/packages/lf20_totrpclr.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Langkah Gabung</h1>
+    <p>Daftar, ikuti sinyal, pantau strategi, nikmati keuntungan dari sistem modern DV Team & OPALP.</p>
+  </div>
+
+  <!-- Slide 11 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Bergabung Sekarang</h1>
+    <p>Mari buka pikiran dan ambil peluang baru. Wujudkan penghasilan tambahan dengan cara modern.</p>
+  </div>
+
+  <!-- Slide 12 -->
+  <div class="slide">
+    <lottie-player class="lottie-slide animate-slide" src="https://assets7.lottiefiles.com/packages/lf20_t24tpvcu.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <img class="fallback" src="https://i.gifer.com/embedded/download/3o6ZtpxSZbQRRnwCKQ.gif" alt="Fallback animasi">
+    <h1>Terima Kasih</h1>
+    <p>Gabung bersama DV Team & OPALP dan jadilah bagian dari sistem investasi modern yang cerdas.</p>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-buttons">
+    <button onclick="prevSlide()" style="background:#e0e0e0;">⬅ Sebelumnya</button>
+    <button onclick="nextSlide()" style="background:#06b6d4; color:white;">Berikutnya ➡</button>
+  </div>
+
+  <p id="progress" style="text-align:center; color:#1e293b; font-weight:bold;">Slide 1 dari 12</p>
+
+</div>
+
+<script>
+let current = 0;
+const slides = document.querySelectorAll('.slide');
+const progress = document.getElementById('progress');
+
+function showSlide(i) {
+  slides.forEach(s => {
+    s.classList.remove('active');
+    const lottie = s.querySelector('lottie-player');
+    const fallback = s.querySelector('.fallback');
+    lottie.style.display = 'block';
+    fallback.style.display = 'none';
+  });
+
+  const activeSlide = slides[i];
+  activeSlide.classList.add('active');
+  progress.textContent = `Slide ${i+1} dari ${slides.length}`;
+
+  const lottie = activeSlide.querySelector('lottie-player');
+  const fallback = activeSlide.querySelector('.fallback');
+  lottie.addEventListener('error', () => {
+    lottie.style.display = 'none';
+    fallback.style.display = 'block';
+  });
+}
+
+function nextSlide() {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}
+
+function prevSlide() {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') nextSlide();
+  if (e.key === 'ArrowLeft') prevSlide();
+});
+
+setInterval(nextSlide, 15000); // auto-slide tiap 15 detik
+
+showSlide(current);
+</script>
+
+</body>
+</html>
