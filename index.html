@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peluang Bisnis Interaktif: DV TEAM x OPALP</title>
+    <title> Peluang Bisnis Interaktif:DV TEAM x OPALP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8fafc;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
         .nav-link {
             transition: all 0.3s ease;
@@ -89,6 +92,13 @@
             width: 100%;
             height: 100%;
             background-color: white;
+        }
+        
+        /* Modal background classes */
+        .charity-modal-bg, .office-modal-bg {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
         }
     </style>
 </head>
@@ -195,8 +205,8 @@
                 <div class="grid md:grid-cols-3 gap-8">
                     <div class="bg-white p-8 rounded-xl shadow-lg text-center">
                         <div class="bg-sky-100 text-sky-800 text-3xl w-16 h-16 rounded-full flex items-center justify-center mx-auto font-bold">1</div>
-                        <h3 class="text-xl font-bold mt-6 mb-2">Dapatkan Sinyal Ajaib</h3>
-                        <p>Setiap hari, terima "contekan" trading akurat dari AI kami langsung ke ponsel Anda.</p>
+                        <h3 class="text-xl font-bold mt-6 mb-2">Daftar Di Opalp</h3>
+                        <p>Setiap hari, Profit 1,8% dan BEP 40 Hari".</p>
                     </div>
                     <div class="bg-white p-8 rounded-xl shadow-lg text-center">
                         <div class="bg-sky-100 text-sky-800 text-3xl w-16 h-16 rounded-full flex items-center justify-center mx-auto font-bold">2</div>
@@ -205,13 +215,13 @@
                     </div>
                     <div class="bg-white p-8 rounded-xl shadow-lg text-center">
                         <div class="bg-sky-100 text-sky-800 text-3xl w-16 h-16 rounded-full flex items-center justify-center mx-auto font-bold">3</div>
-                        <h3 class="text-xl font-bold mt-6 mb-2">Nikmati Hasilnya</h3>
-                        <p>Lihat keuntungan masuk ke akun Anda secara konsisten dan terukur.</p>
+                        <h3 class="text-xl font-bold mt-6 mb-2">Gabung Komunitas</h3>
+                        <p>Dapatkan Edukasi, Keuntungan tumbuh secara konsisten dan terukur.</p>
                     </div>
                 </div>
                 <div class="mt-16 bg-amber-100 border-l-4 border-amber-500 text-amber-800 p-6 rounded-r-lg max-w-4xl mx-auto">
-                    <h4 class="font-bold text-xl">Aturan Emas: Trading Cerdas, Tidur Tenang</h4>
-                    <p class="mt-2">Kami sangat peduli dengan keamanan dana Anda. Karena itu, kami menerapkan **Aturan Emas**: Selalu gunakan hanya **1% dari modal Anda** per transaksi. Ini adalah strategi manajemen risiko profesional untuk melindungi Anda dari kerugian, menjaga emosi tetap stabil, dan fokus pada keuntungan jangka panjang.</p>
+                    <h4 class="font-bold text-xl">"Dari Cemas, Menjadi Cerdas"</h4>
+                    <p class="mt-2">Sekarang saatnya bukan lagi mencari pekerjaan tambahan, tetapi menjalankan konsep & sistem yang bisa menjadi mesin & bekerja 24jam menghasilkan keuntungan buat anda, tanpa harus lelah & membuang waktu percuma</p>
                 </div>
             </div>
         </section>
@@ -393,12 +403,12 @@
                         <h3 class="text-xl font-bold mb-2">Subsidi Makan</h3>
                         <p>Adakan pertemuan tim minimal 3 orang? Jika target anggota baru tercapai, kami akan reimburse 100% biaya makan Anda (hingga 3 USDT/orang).</p>
                     </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="bg-white p-8 rounded-xl shadow-lg cursor-pointer hover:shadow-xl transition-shadow relative" id="charity-card">
                         <div class="text-3xl mb-4">❤️</div>
                         <h3 class="text-xl font-bold mb-2">Subsidi Amal</h3>
                         <p>Berbuat baik bersama tim dengan tema "Aksi Cinta Kasih DV TEAM". Tim LV2 ke atas bisa mendapatkan subsidi hingga 800 USDT per bulan untuk kegiatan amal.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="bg-white p-8 rounded-xl shadow-lg cursor-pointer hover:shadow-xl transition-shadow relative" id="office-card">
                         <div class="text-3xl mb-4">🏢</div>
                         <h3 class="text-xl font-bold mb-2">Subsidi Kantor</h3>
                         <p>Untuk tim level LV3 ke atas, kami bantu wujudkan kantor impian Anda dengan menanggung biaya sewa dan perlengkapan dasar hingga 8000 USDT per bulan.</p>
@@ -454,6 +464,84 @@
             <p class="mt-6 text-sm text-slate-500">Klik tombol di bawah untuk mendaftar melalui link referral kami.</p>
             <a href="https://opalp.com//register?inviteId=3S7FNM" target="_blank" class="mt-4 w-full bg-amber-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-amber-600 transition-colors inline-block">Daftar Sekarang</a>
             <button id="close-modal-btn" class="mt-2 w-full bg-slate-200 text-slate-800 font-bold py-3 px-6 rounded-lg hover:bg-slate-300 transition-colors">Tutup</button>
+        </div>
+    </div>
+    
+    <div id="charity-modal" class="fixed inset-0 hidden charity-modal-bg flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-md p-8 text-center">
+            <h3 class="text-2xl font-bold text-sky-900 mb-4">Rincian Subsidi Amal</h3>
+            <p class="text-slate-600 mb-6">Berikut adalah rincian subsidi yang bisa didapatkan tim berdasarkan level.</p>
+            <div class="space-y-4 text-left">
+                <div class="bg-sky-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-lg text-sky-800">LV2 - LV3</h4>
+                    <p class="text-slate-700">1x setiap bulan, sebesar <span class="font-bold text-amber-600">100 USDT</span></p>
+                </div>
+                <div class="bg-sky-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-lg text-sky-800">LV4 - LV7</h4>
+                    <p class="text-slate-700">2x setiap bulan, sebesar <span class="font-bold text-amber-600">200 USDT</span></p>
+                </div>
+                <div class="bg-sky-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-lg text-sky-800">LV8 ke atas</h4>
+                    <p class="text-slate-700">4x setiap bulan, sebesar <span class="font-bold text-amber-600">200 USDT</span></p>
+                </div>
+            </div>
+            <button id="close-charity-modal-btn" class="mt-6 w-full bg-slate-200 text-slate-800 font-bold py-3 px-6 rounded-lg hover:bg-slate-300 transition-colors">Tutup</button>
+        </div>
+    </div>
+
+    <div id="office-modal" class="fixed inset-0 hidden office-modal-bg flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-md p-8 text-center">
+            <h3 class="text-2xl font-bold text-sky-900 mb-4">Rincian Subsidi Kantor</h3>
+            <p class="text-slate-600 mb-6">Nikmati subsidi bulanan untuk operasional kantor tim Anda sesuai dengan level tim.</p>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200 rounded-lg overflow-hidden">
+                    <thead class="bg-sky-100">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-bold text-sky-800 uppercase tracking-wider">Level</th>
+                            <th class="px-4 py-3 text-left text-xs font-bold text-sky-800 uppercase tracking-wider">Skala Tim</th>
+                            <th class="px-4 py-3 text-left text-xs font-bold text-sky-800 uppercase tracking-wider">Subsidi Bulanan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-slate-800">LV3</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm text-slate-600">101 - 200</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-bold text-amber-600">300 USDT</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-slate-800">LV4</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm text-slate-600">201 - 350</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-bold text-amber-600">400 USDT</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-slate-800">LV5</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm text-slate-600">351 - 500</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-bold text-amber-600">500 USDT</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-slate-800">LV6</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm text-slate-600">501 - 900</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-bold text-amber-600">1000 USDT</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-slate-800">LV7</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm text-slate-600">901 - 1600</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-bold text-amber-600">2000 USDT</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-slate-800">LV8</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm text-slate-600">1601 - 3500</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-bold text-amber-600">3000 USDT</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-slate-800">LV9</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm text-slate-600">3501 - N</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-sm font-bold text-amber-600">8000 USDT</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button id="close-office-modal-btn" class="mt-6 w-full bg-slate-200 text-slate-800 font-bold py-3 px-6 rounded-lg hover:bg-slate-300 transition-colors">Tutup</button>
         </div>
     </div>
 
@@ -729,6 +817,44 @@
             modal.addEventListener('click', (event) => {
                 if (event.target === modal) {
                     closeModal();
+                }
+            });
+
+            // Charity Modal functionality
+            const charityCard = document.getElementById('charity-card');
+            const charityModal = document.getElementById('charity-modal');
+            const closeCharityModalBtn = document.getElementById('close-charity-modal-btn');
+
+            charityCard.addEventListener('click', () => {
+                charityModal.classList.remove('hidden');
+            });
+
+            closeCharityModalBtn.addEventListener('click', () => {
+                charityModal.classList.add('hidden');
+            });
+
+            charityModal.addEventListener('click', (event) => {
+                if (event.target === charityModal) {
+                    charityModal.classList.add('hidden');
+                }
+            });
+
+            // Office Modal functionality
+            const officeCard = document.getElementById('office-card');
+            const officeModal = document.getElementById('office-modal');
+            const closeOfficeModalBtn = document.getElementById('close-office-modal-btn');
+
+            officeCard.addEventListener('click', () => {
+                officeModal.classList.remove('hidden');
+            });
+
+            closeOfficeModalBtn.addEventListener('click', () => {
+                officeModal.classList.add('hidden');
+            });
+
+            officeModal.addEventListener('click', (event) => {
+                if (event.target === officeModal) {
+                    officeModal.classList.add('hidden');
                 }
             });
         });
